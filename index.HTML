@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>N-Queens Solver</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</head>
+<body>
+  <h1>N-Queens Visual Solver</h1>
+
+  <div class="explanation">
+    <h2>How the N-Queens Problem is Solved</h2>
+    <p>The N-Queens problem is solved using a recursive backtracking algorithm...</p>
+    <ol>
+      <li>Start in the first row and try placing a queen in each column.</li>
+      <li>Move to the next row, checking safety.</li>
+      <li>Backtrack if needed, and record complete solutions.</li>
+    </ol>
+  </div>
+
+  <div class="controls">
+    <input type="number" id="nInput" value="4" min="1" />
+    <button onclick="solve()">Solve</button>
+    <button onclick="toggleDarkMode()" class="toggle-dark">Toggle Dark Mode</button>
+    <button onclick="startAnimation()">Animate</button>
+  </div>
+
+  <div id="output"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>

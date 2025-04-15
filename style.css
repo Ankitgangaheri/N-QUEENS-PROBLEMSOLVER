@@ -1,0 +1,73 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    transition: background 0.4s, color 0.4s;
+    padding: 30px;
+  }
+  :root {
+    --bg: #f1f8e9;
+    --text: #212121;
+    --cell-light: #dcedc8;
+    --cell-dark: #aed581;
+  }
+  body.dark {
+    --bg: #263238;
+    --text: #f5f5f5;
+    --cell-light: #37474f;
+    --cell-dark: #455a64;
+  }
+  h1 {
+    text-align: center;
+  }
+  .controls {
+    text-align: center;
+    margin: 20px;
+  }
+  input[type="number"] {
+    padding: 10px;
+    width: 80px;
+    border-radius: 5px;
+  }
+  button {
+    padding: 10px 15px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .toggle-dark {
+    background: #333;
+    color: white;
+  }
+  .board-container {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 30px auto;
+    max-width: fit-content;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  }
+  .board {
+    display: grid;
+    gap: 0;
+  }
+  .cell {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 26px;
+    font-weight: bold;
+  }
+  .light { background-color: var(--cell-light); }
+  .dark { background-color: var(--cell-dark); }
+  .queen { color: #ffeb3b; }
+  .explanation {
+    max-width: 800px;
+    margin: 0 auto 30px;
+    background: rgba(0,0,0,0.05);
+    border-radius: 8px;
+    padding: 20px;
+  }
